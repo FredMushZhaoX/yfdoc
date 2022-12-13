@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <title>视频播放器</title>
+  <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+</head>
+<body style="margin: 0">
+<script src="https://cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script type="text/javascript" src="/player/query.js"></script>
+<script>
+  $(function(){
+
+    // 获得播放路径
+    const source = getParam('source');
+    const url = decodeURIComponent(source);
+
+    // 添加内容
+    $('body').append('<video id="my-player" class="video-js">\n' +
+      '  <source src="'+url+'" type="video/mp4">\n' +
+      '</video>\n');
+
+    // 进行初始化
+    videojs('my-player', {
+      controls: true,
+      autoplay: true,
+      preload: 'auto',
+      fluid: true
+    });
+
+  })
+</script>
+</body>

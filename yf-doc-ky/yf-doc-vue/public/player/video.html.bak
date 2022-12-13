@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge" >
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <title>直播播放器</title>
+  <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.3/skins/default/aliplayer-min.css" />
+  <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js"></script>
+  <script type="text/javascript" src="/player/query.js"></script>
+</head>
+<body>
+<div class="prism-player" id="player-con" style="width: 100%;overflow: hidden"></div>
+<script>
+
+  // 获得播放源
+  var source = getParam('source')
+
+  new Aliplayer({
+      "id": "player-con",
+      "source": decodeURIComponent(source),
+      "width": "100%",
+      "height": "500px",
+      "autoplay": true,
+      "isLive": false,
+      "rePlay": false,
+      "playsinline": true,
+      "preload": true,
+      "controlBarVisibility": "hover",
+      "useH5Prism": true
+    });
+</script>
+</body>

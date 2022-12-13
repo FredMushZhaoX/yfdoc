@@ -1,0 +1,5 @@
+/docs/docker/runtime/fonts.tar.gz
+/docs/docker/runtime/jdk-8u281-linux-x64.tar.gz
+/docs/docker/runtime/LibreOffice_6.4.7_Linux_x86-64_rpm.tar.gz
+/docs/docker/runtime/LibreOffice_6.4.7_Linux_x86-64_rpm_langpack_zh-CN.tar.gz
+/target/

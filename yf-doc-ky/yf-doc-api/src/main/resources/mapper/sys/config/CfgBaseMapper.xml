@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yf.document.modules.sys.config.mapper.CfgBaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yf.document.modules.sys.config.entity.CfgBase">
+        <id column="id" property="id" />
+        <result column="site_name" property="siteName" />
+        <result column="front_logo" property="frontLogo" />
+        <result column="back_logo" property="backLogo" />
+        <result column="copy_right" property="copyRight" />
+        <result column="tmp_dir" property="tmpDir" />
+        <result column="upload_type" property="uploadType" />
+        <result column="live_type" property="liveType" />
+        <result column="h5_code" property="h5Code" />
+        <result column="mp_code" property="mpCode" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+        <result column="data_flag" property="dataFlag" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        `id`,`site_name`,`front_logo`,`back_logo`,`copy_right`,`tmp_dir`,`upload_type`,`live_type`,`h5_code`,`mp_code`,`create_time`,`update_time`,`create_by`,`update_by`,`data_flag`
+    </sql>
+
+</mapper>

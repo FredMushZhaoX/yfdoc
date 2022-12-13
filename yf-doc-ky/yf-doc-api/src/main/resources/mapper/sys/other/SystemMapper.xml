@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yf.document.modules.sys.other.mapper.SystemMapper">
+
+    <select id="countSysData" resultType="Integer">
+        SELECT COUNT(0) FROM ${table}
+        WHERE data_flag=1
+        AND id IN <foreach collection="ids" item="id" open="(" close=")" separator=",">#{id}</foreach>
+    </select>
+
+</mapper>

@@ -1,0 +1,62 @@
+# 完整的外挂配置文件，使用java -jar doc-api.jar --spring.config.location=application-local.yml
+server:
+  port: 8201
+
+spring:
+  application:
+    name: doc-api
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  # 数据库配置
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/yf_doc_ky?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    hikari:
+      connection-test-query: SELECT 1
+      idle-timeout: 180000
+      connection-timeout: 30000
+      maximum-pool-size: 3000
+      max-lifetime: 1800000
+      minimum-idle: 50
+
+  # Redis配置
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    password:
+    timeout: 5000
+
+
+# 文档转换
+jodconverter:
+  local:
+    enabled: false
+    office-home: C:\LibreOffice
+    max-tasks-per-process: 10
+    port-numbers: 8100
+
+# 基础配置
+ycloud:
+  # false运行多处登录，true为T下线
+  login-tick: false
+  # 微信登录成功以后，将token推送到这个链接同步登录
+  login-sync-pc: https://document.yfhl.net/#/sync/{token}/{roleType}
+  # 微信登录成功以后，将token推送到这个链接同步登录
+  login-sync-h5: https://document-m.yfhl.net/#/pages/login/sync?token={token}
+  # 微信获取code以后回调此URL
+  login-redirect: https://document.yfhl.net/api/common/wx/redirect
+
+# 开启文档
+swagger:
+  enable: true
+
+logging:
+  level:
+    root: dubug
+  path: logs/${spring.application.name}/

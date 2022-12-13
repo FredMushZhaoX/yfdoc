@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yf.document.modules.doc.mapper.TDocumentInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yf.document.modules.doc.dto.TDocumentInfoDTO">
+        <id column="id" property="id" />
+        <result column="create_by" property="createBy" />
+        <result column="update_by" property="updateBy" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="title" property="title" />
+        <result column="file_type" property="fileType" />
+        <result column="doc_type" property="docType" />
+        <result column="status" property="status" />
+        <result column="file_url" property="fileUrl" />
+        <result column="view_url" property="viewUrl" />
+        <result column="failure_reason" property="failureReason" />
+        <result column="download_power" property="downloadPower" />
+        <result column="view_power" property="viewPower" />
+        <result column="view_count" property="viewCount" />
+        <result column="download_count" property="downloadCount" />
+        <result column="remarks" property="remarks" />
+        <result column="cover" property="cover" />
+
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        `id`,`create_by`,`update_by`,`create_time`,`update_time`,`title`,`file_type`,`doc_type`,`status`,`file_url`,`view_url`,`failure_reason`,`download_power`,`view_power`,`view_count`,`download_count`,`remarks`,cover
+    </sql>
+    <update id="updateStatus" >
+        update t_document_info
+        set status = #{status}
+        <if test="null != failureReason and failureReason!=''">
+            ,failure_reason = #{failureReason}
+        </if>
+        where id = #{id}
+    </update>
+
+    <select id="paging" resultMap="BaseResultMap">
+        SELECT a.*,u.real_name  as "createByName" FROM t_document_info
+        a left join sys_dic_value t on a.doc_type = t.id
+        left join sys_user u on u.id = a.create_by
+        <where>
+            <if test="query!=null">
+                <if test="query.title!=null and query.title!=''">
+                    AND a.title  LIKE '%${query.title}%'
+                </if>
+                <if test="query.createBy!=null and query.createBy!=''">
+                    AND a.create_by = #{query.createBy}
+                </if>
+                <if test="query.status!=null and query.status!=''">
+                    AND a.status = #{query.status}
+                </if>
+                <if test="query.docType!=null and query.docType!=''">
+                    AND  (FIND_IN_SET(#{query.docType},t.parent_ids) or a.doc_type = #{query.docType})
+                </if>
+            </if>
+        </where>
+    </select>
+</mapper>

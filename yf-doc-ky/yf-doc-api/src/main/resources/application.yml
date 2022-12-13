@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: yf-document-api
+  profiles:
+      active: dev
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 8101
