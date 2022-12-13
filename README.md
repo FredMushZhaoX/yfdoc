@@ -57,14 +57,4 @@ LibreOffice  [点此下载](https://yf-commons-files.oss-cn-beijing.aliyuncs.com
 QQ交流群：537163131      
 邮箱：626264481@qq.com   
 手机：18710213152    
-网站：https://www.jeedocm.com/?plan=osck1  
-
-![用户登录](yf-doc-ky/doc/%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95.png)
-![资料管理](yf-doc-ky/doc/%E8%B5%84%E6%96%99%E7%AE%A1%E7%90%86.png)
-![添加资料](yf-doc-ky/doc/%E6%B7%BB%E5%8A%A0%E8%B5%84%E6%96%99.png)
-![资料预览](yf-doc-ky/doc/%E8%B5%84%E6%96%99%E9%A2%84%E8%A7%88.png)
-![新闻管理](yf-doc-ky/doc/%E6%96%B0%E9%97%BB%E7%AE%A1%E7%90%86.png)
-![公告管理](yf-doc-ky/doc/%E5%85%AC%E5%91%8A%E7%AE%A1%E7%90%86.png)
-![菜单管理](yf-doc-ky/doc/%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86.png)
-![用户管理](yf-doc-ky/doc/%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.png)
-![字典管理](yf-doc-ky/doc/%E5%AD%97%E5%85%B8%E7%AE%A1%E7%90%86.png)
+网站：https://www.jeedocm.com/?plan=github
