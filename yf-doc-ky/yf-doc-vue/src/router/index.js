@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import LoginLayout from '@/views/login/layout/LoginLayout'
-
 Vue.use(Router)
 import Layout from '@/layout'
 
