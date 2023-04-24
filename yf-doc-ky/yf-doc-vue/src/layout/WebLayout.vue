@@ -5,7 +5,6 @@
     <el-header style="padding: 0px; height: 60px">
       <web-header />
     </el-header>
-
     <el-main style="padding: 0px;">
       <el-row type="flex" justify="center" style="margin-top: 25px;">
         <el-col :span="20">
