@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import LoginLayout from '@/views/login/layout/LoginLayout'
 Vue.use(Router)
 import Layout from '@/layout'
-
 // 静态通用路由
 export const constantRoutes = [
   {
