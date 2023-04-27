@@ -1,7 +1,5 @@
 <template>
-
   <div>
-
     <el-row>
 
       <el-col :lg="14" :md="15" class="left hidden-sm-and-down">
