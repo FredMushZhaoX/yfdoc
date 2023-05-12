@@ -1,5 +1,4 @@
 <template>
-
   <el-container class="all-bg">
     <el-header style="padding: 0px; height: 60px">
       <web-header />
