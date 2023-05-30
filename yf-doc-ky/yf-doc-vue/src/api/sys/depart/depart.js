@@ -1,5 +1,4 @@
 import { post } from '@/utils/request'
-
 export function pagingTree(data) {
   return post('/api/sys/depart/paging', data)
 }
