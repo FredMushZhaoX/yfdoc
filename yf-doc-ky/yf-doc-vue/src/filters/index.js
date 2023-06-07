@@ -92,7 +92,6 @@ export function booleanFilter(value) {
   }
   return map[value]
 }
-
 /**
  * 百分比过滤器
  * @param value
