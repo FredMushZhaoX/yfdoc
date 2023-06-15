@@ -11,7 +11,6 @@
     </div>
   </div>
 </template>
-
 <script>
 import { AppMain, Navbar, Sidebar, TagsView } from './components'
 import ResizeMixin from './mixin/ResizeHandler'
