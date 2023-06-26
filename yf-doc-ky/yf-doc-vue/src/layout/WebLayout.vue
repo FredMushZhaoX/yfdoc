@@ -9,6 +9,7 @@
           <app-main class="main-bg" />
         </el-col>
       </el-row>
+      
     </el-main>
     <el-footer v-if="siteData.copyRight" style="padding: 0px; margin-top: 25px">
       <el-row type="flex" style="height: 60px; color: #A3A8B0; align-items: center; font-size: 14px; background: #333">
