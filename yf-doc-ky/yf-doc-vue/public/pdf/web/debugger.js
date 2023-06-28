@@ -15,7 +15,6 @@
 /* eslint-disable no-var */
 
 "use strict";
-
 var FontInspector = (function FontInspectorClosure() {
   var fonts;
   var active = false;
