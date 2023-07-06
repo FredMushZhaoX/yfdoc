@@ -42,7 +42,6 @@ LibreOffice  [点此下载](https://yf-commons-files.oss-cn-beijing.aliyuncs.com
 
 
 # 快速运行
-0、下载编译好的jar包到本目录（或您自行编译）：https://cdn.yfhl.net/lite/yf-doc-api.jar
 1、自行安装MySQL数据库（版本最好大于5.7），将`安装资源中`的`yf_doc_ky.sql`导入到安装好的数据库    
 2、安装Java环境，要求JDK版本大于1.7   
 3、安装LibreOffice 用于文件转换在线预览,注意安装目录不能有中文 
