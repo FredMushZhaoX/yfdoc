@@ -1,4 +1,5 @@
 快速运行
+0、下载编译好的jar包到本目录（或您自行编译）：https://cdn.yfhl.net/lite/yf-doc-api.jar
 1、自行安装MySQL数据库（版本最好大于5.7），将安装资源中的yf_doc_ky.sql导入到安装好的数据库，并注意修改数据库名及账号密码
 
 2、安装Java环境，要求JDK版本大于1.7
@@ -9,7 +10,7 @@
 
 5、Windows通过start.bat运行，Linux运行start.sh运行
 
-6、如果无意外，可通过：http://localhost:8201 访问到项目了
+6、如果无意外，可通过：http://localhost:8101 访问到项目了
 
 7、管理员账号密码：admin/admin 
 
@@ -20,4 +21,3 @@ Mysql5.7+  下载地址：https://cdn.yfhl.net/java-win/mysql-installer-communit
 LibreOffice 下载地址：https://www.libreoffice.org
 
 注意：运行的时候运行包所在目录不能包含中文目录，会导致LibreOffice启动失败。
-（快速运行的jar包在官方QQ群(537163131)文件的开发部署文档.zip中下载）
