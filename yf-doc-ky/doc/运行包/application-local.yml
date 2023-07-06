@@ -1,6 +1,6 @@
 # 完整的外挂配置文件，使用java -jar doc-api.jar --spring.config.location=application-local.yml
 server:
-  port: 8201
+  port: 8101
 
 spring:
   application:
