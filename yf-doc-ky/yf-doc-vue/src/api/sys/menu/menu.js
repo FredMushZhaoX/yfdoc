@@ -1,5 +1,4 @@
 import { post } from '@/utils/request'
-
 export function fetchRoutes() {
   return post('/api/sys/menu/routes')
 }
