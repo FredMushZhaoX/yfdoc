@@ -1,6 +1,5 @@
 <template>
   <div class="app-container">
-
     <el-form ref="postForm" :model="postForm" :rules="rules" label-position="left" label-width="150px">
       <el-card>
         <el-form-item label="资料名称" prop="title">
